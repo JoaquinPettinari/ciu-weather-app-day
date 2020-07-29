@@ -1,21 +1,33 @@
-*{
-    margin: 0%;
-    font-family: 'Barlow'
+@media (min-width: 600px) {
+  
+    #titulos{
+        margin-top: 1.2%;
+        margin-left:4% ;
+        width:91%
+    }
 }
+
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@100&display=swap%27');
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@100;400&display=swap%27');
+body { font-family: Barlow !important; }
 
 #imagenFondo{
     width: 100%;
     height: 250px;
     border-color: black;
-    
 }
 
-.titulos{
+*{
+    margin: 0%;
+}
+
+
+.titulo{
     width: 50%;
     height: 30px;
     float: left;
     text-align: center;
-    font-size: 18px;
+    font-size: 17px;
     float: left;
     margin-top: -1.7%;
 }
@@ -48,7 +60,7 @@
 
 .valores{
     font-weight: bold;
-    font-size: 20px;
+    font-size: 19px;
 }
 
 .titulosValores{
