@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="color.css">
+</head>
+<body>
+    <div><img id="imagenFondo" src="imagenes/fondo_imagen.png"></div>
+    <div class="titulos"><div id="fechaActual"></div><div id="horaActual"></div></div>
+    <div class="titulos" id="lugarActual"></div>
+
+    
+    <div id="marco">
+        <div class= "cuadro"><div id="iconoClima"></div><div id="tituloClima"></div></div>
+        <div class= "cuadro"><div id="temperatura"></div><div class="titulosValores">°C</div></div>
+        <div class= "cuadro titulosValores maxMin"><p id="maximo"></p><p id="minimo"></p></div>
+        <div class= "cuadro"><img src="imagenes/humedad_icono.png"><div class="valores" id="humedad"></div><p class="titulosValores">Humedad</p></div>
+        <div class= "cuadro"><img src="imagenes/presión_icono.png"><div class="valores" id="presion"></div><p class="titulosValores">Presion</p></div>
+        <div class= "cuadro"><img src="imagenes/viento_icono.png"><div class="valores" id="viento"></div><p class="titulosValores">Viento</p></div>
+        <div class= "cuadro"><img src="imagenes/amanecer_icono.png"><div class="valores" id="amanecer"></div><p class="titulosValores">Amanecer</p></div>
+        <div class= "cuadro"><img src="imagenes/puestaSol_icono.png"><div class="valores" id="puestaSol"></div><p class="titulosValores">Puesta de sol</p></div>
+        <div class= "cuadro"><img src="imagenes/tiempoDia_icono.png"><div class="valores" id="horasDeSol"></div><p class="titulosValores">Horas de sol</p></div>
+
+
+        <div class= "cuadro"><div id="iconoClima1"></div><p id="maximo1"></p><p id="minimo1"></p><p id="fechaDia1"></p></div>
+        <div class= "cuadro"><div id="iconoClima2"></div><p id="maximo2"></p><p id="minimo2"></p><p id="fechaDia2"></p></div>
+        <div class= "cuadro"><div id="iconoClima3"></div><p id="maximo3"></p><p id="minimo3"></p><p id="fechaDia3"></p></div>
+    </div>
+
+    
+
+    <script src="app.js"></script>
+</body>
+</html>
