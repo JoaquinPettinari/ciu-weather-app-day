@@ -42,16 +42,18 @@ function agregarDatos(){
     var horasDeSol = new Date(hoyRespueta.dt * 1000)
     document.getElementById("horasDeSol").innerHTML += horasDeSol.getHours()
 
-    const mañana = new Date(hoy);
+
 
         for ( i = 1; i <= 3; i ++) {
+            var mañana = new Date(hoy.getTime() + ( (24 * 60 * 60 * 1000) * i ));
+
             const icon = respuesta.daily[i].weather[0].icon;
             const url = ` https://openweathermap.org/img/wn/${icon}@2x.png`;
 
             document.getElementById(`iconoClima${i}`).innerHTML = `<img src=${url} width="40" height="40">`;
             document.getElementById(`maximo${i}`).innerHTML = `${parseInt(respuesta.daily[i].temp.max)}°C↑`;
             document.getElementById(`minimo${i}`).innerHTML = `${parseInt(respuesta.daily[i].temp.min)}°C↓`;
-            mañana.setDate(hoy.getDate() + i);
+
             document.getElementById(`fechaDia${i}`).innerHTML = `
                 ${mañana.toString().substr(0,3)}, ${mañana.toString().substr(7,3)}`
         }
